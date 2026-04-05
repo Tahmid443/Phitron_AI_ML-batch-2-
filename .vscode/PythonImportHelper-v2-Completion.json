@@ -1,0 +1,173 @@
+[
+    {
+        "label": "inp",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "inp = input()\nnumbers = inp.split()\nx = int(numbers[0])  \ny = int(numbers[1])  \nlast_digit_of_x = x % 10\nlast_digit_of_y = y % 10\nsum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "numbers = inp.split()\nx = int(numbers[0])  \ny = int(numbers[1])  \nlast_digit_of_x = x % 10\nlast_digit_of_y = y % 10\nsum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "x = int(numbers[0])  \ny = int(numbers[1])  \nlast_digit_of_x = x % 10\nlast_digit_of_y = y % 10\nsum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "y = int(numbers[1])  \nlast_digit_of_x = x % 10\nlast_digit_of_y = y % 10\nsum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "last_digit_of_x",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "last_digit_of_x = x % 10\nlast_digit_of_y = y % 10\nsum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "last_digit_of_y",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "last_digit_of_y = y % 10\nsum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "description": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "peekOfCode": "sum = last_digit_of_x + last_digit_of_y\nprint(sum)",
+        "detail": "Intro to python & machine learning(optional).module-1.Digits_summation",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.digits",
+        "description": "Intro to python & machine learning(optional).module-2.digits",
+        "peekOfCode": "t = int(input())\nfor i in range(t):\n    number = int(input())\n    if number == 0:\n        print(0)\n        continue\n    while number > 0:\n        print(number%10,end = \" \")\n        number//=10\n    print()",
+        "detail": "Intro to python & machine learning(optional).module-2.digits",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "description": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "peekOfCode": "num = int(input())\ninp = input()\neven = odd =  pos = neg = 0\nnumbers = [int(x) for x in inp.split()]\nfor i in range(num):\n    if numbers[i]%2!=0:\n        odd+=1\n    elif numbers[i]%2==0:\n        even+=1\n    if numbers[i]>0:",
+        "detail": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "documentation": {}
+    },
+    {
+        "label": "inp",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "description": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "peekOfCode": "inp = input()\neven = odd =  pos = neg = 0\nnumbers = [int(x) for x in inp.split()]\nfor i in range(num):\n    if numbers[i]%2!=0:\n        odd+=1\n    elif numbers[i]%2==0:\n        even+=1\n    if numbers[i]>0:\n        pos+=1",
+        "detail": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "documentation": {}
+    },
+    {
+        "label": "even",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "description": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "peekOfCode": "even = odd =  pos = neg = 0\nnumbers = [int(x) for x in inp.split()]\nfor i in range(num):\n    if numbers[i]%2!=0:\n        odd+=1\n    elif numbers[i]%2==0:\n        even+=1\n    if numbers[i]>0:\n        pos+=1\n    elif numbers[i]<0:",
+        "detail": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "description": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "peekOfCode": "numbers = [int(x) for x in inp.split()]\nfor i in range(num):\n    if numbers[i]%2!=0:\n        odd+=1\n    elif numbers[i]%2==0:\n        even+=1\n    if numbers[i]>0:\n        pos+=1\n    elif numbers[i]<0:\n        neg+=1",
+        "detail": "Intro to python & machine learning(optional).module-2.even_odd_pos_neg",
+        "documentation": {}
+    },
+    {
+        "label": "inp",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "inp = input()\nnumbers = inp.split()\nx = int(numbers[0])\ny = int(numbers[1])\nz = int(numbers[2])\nmax = max(x,y,z)\nmin = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "numbers = inp.split()\nx = int(numbers[0])\ny = int(numbers[1])\nz = int(numbers[2])\nmax = max(x,y,z)\nmin = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "x = int(numbers[0])\ny = int(numbers[1])\nz = int(numbers[2])\nmax = max(x,y,z)\nmin = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "y = int(numbers[1])\nz = int(numbers[2])\nmax = max(x,y,z)\nmin = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "z = int(numbers[2])\nmax = max(x,y,z)\nmin = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "max",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "max = max(x,y,z)\nmin = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "min",
+        "kind": 5,
+        "importPath": "Intro to python & machine learning(optional).module-2.max_min",
+        "description": "Intro to python & machine learning(optional).module-2.max_min",
+        "peekOfCode": "min = min(x,y,z)\nprint(min,max)",
+        "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    }
+]
