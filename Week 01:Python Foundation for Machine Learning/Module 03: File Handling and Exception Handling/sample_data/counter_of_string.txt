@@ -1,0 +1,3 @@
+total line: 2
+total number of words:5
+total number of char: 20

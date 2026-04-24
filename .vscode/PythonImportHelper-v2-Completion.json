@@ -1,5 +1,39 @@
 [
     {
+        "label": "genai",
+        "importPath": "google",
+        "description": "google",
+        "isExtraImport": true,
+        "detail": "google",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
         "label": "inp",
         "kind": 5,
         "importPath": "Intro to python & machine learning(optional).module-1.Digits_summation",
@@ -168,6 +202,123 @@
         "description": "Intro to python & machine learning(optional).module-2.max_min",
         "peekOfCode": "min = min(x,y,z)\nprint(min,max)",
         "detail": "Intro to python & machine learning(optional).module-2.max_min",
+        "documentation": {}
+    },
+    {
+        "label": "most_frequent_word",
+        "kind": 2,
+        "importPath": "Week 01:Python Foundation for Machine Learning.Module 04: Asssignment-1.test",
+        "description": "Week 01:Python Foundation for Machine Learning.Module 04: Asssignment-1.test",
+        "peekOfCode": "def most_frequent_word(filename):\n    file = open(filename, \"r\")\n    text = file.read()\n    text = text.lower()\n    freq = {}\n    word = \"\"\n    for ch in text:\n        if ch.isalnum(): \n            word += ch\n        else:",
+        "detail": "Week 01:Python Foundation for Machine Learning.Module 04: Asssignment-1.test",
+        "documentation": {}
+    },
+    {
+        "label": "api_key",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "peekOfCode": "api_key = os.environ.get(\"GEMINI_API_KEY\")\nclient = genai.Client(api_key=api_key)\nresponse = client.models.generate_content(\n    model=\"gemini-3-flash-preview\",\n    contents=\"Give me an idea of Gemini API in 100 words\"\n)\nst.markdown(response.text)",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "peekOfCode": "client = genai.Client(api_key=api_key)\nresponse = client.models.generate_content(\n    model=\"gemini-3-flash-preview\",\n    contents=\"Give me an idea of Gemini API in 100 words\"\n)\nst.markdown(response.text)",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "peekOfCode": "response = client.models.generate_content(\n    model=\"gemini-3-flash-preview\",\n    contents=\"Give me an idea of Gemini API in 100 words\"\n)\nst.markdown(response.text)",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.app",
+        "documentation": {}
+    },
+    {
+        "label": "audio_file",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.audio",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.audio",
+        "peekOfCode": "audio_file = st.file_uploader(\"Enter your audio\",\n                 type=['mp3','ogg','flac'],\n                 )\nprint(type(audio_file))\nif audio_file:\n    st.audio(audio_file)",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.audio",
+        "documentation": {}
+    },
+    {
+        "label": "images",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.image_element",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.image_element",
+        "peekOfCode": "images = st.file_uploader(\"Enter your image (at max 2)\",\n                 type=['jpg','jpeg','png'],\n                 accept_multiple_files= True,\n                 )\nprint(type(images)) \nif images: \n    if(len(images)>2):\n        st.warning(\"You uploaded 3 photos\")\n    col = st.columns(len(images))\n    for i, per_image in enumerate(images): ",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.image_element",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "peekOfCode": "name = st.text_input(\"Enter your name\")\nprint(type(name))\nage = st.number_input(\"Enter your age\",value=None,placeholder=\"Type your age...\")\npressed = st.button(\"Enter to confirm\",type=\"primary\")\nselected = st.selectbox(\"Choose your profession\",\n             (\"Student\",\"Employee\",\"Businessman\"),\n             index=None,\n             accept_new_options = True\n             )\nprint(type(selected))",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "peekOfCode": "age = st.number_input(\"Enter your age\",value=None,placeholder=\"Type your age...\")\npressed = st.button(\"Enter to confirm\",type=\"primary\")\nselected = st.selectbox(\"Choose your profession\",\n             (\"Student\",\"Employee\",\"Businessman\"),\n             index=None,\n             accept_new_options = True\n             )\nprint(type(selected))\nst.write(\"You selected \" ,selected)",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "documentation": {}
+    },
+    {
+        "label": "pressed",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "peekOfCode": "pressed = st.button(\"Enter to confirm\",type=\"primary\")\nselected = st.selectbox(\"Choose your profession\",\n             (\"Student\",\"Employee\",\"Businessman\"),\n             index=None,\n             accept_new_options = True\n             )\nprint(type(selected))\nst.write(\"You selected \" ,selected)\nif pressed: \n    st.write(f\"Your name is {name} and your age is {age}\")",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "documentation": {}
+    },
+    {
+        "label": "selected",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "peekOfCode": "selected = st.selectbox(\"Choose your profession\",\n             (\"Student\",\"Employee\",\"Businessman\"),\n             index=None,\n             accept_new_options = True\n             )\nprint(type(selected))\nst.write(\"You selected \" ,selected)\nif pressed: \n    st.write(f\"Your name is {name} and your age is {age}\")",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.input_element",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.text_elements",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.text_elements",
+        "peekOfCode": "a = 10 \nb= 20 \nst.write(a,b)",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.text_elements",
+        "documentation": {}
+    },
+    {
+        "label": "video_file",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.video",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.video",
+        "peekOfCode": "video_file = st.file_uploader(\"Enter your audio\",\n                 type=['mp4','mkv'],\n                 )\nbutton = st.button(\"Click to upload\")\nif button: \n    if video_file:\n        st.video(video_file)\n        st.success(\"Your file is uploaded successfully\")\n    else:\n        st.error(\"you must upload a file\")",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.video",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.video",
+        "description": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.video",
+        "peekOfCode": "button = st.button(\"Click to upload\")\nif button: \n    if video_file:\n        st.video(video_file)\n        st.success(\"Your file is uploaded successfully\")\n    else:\n        st.error(\"you must upload a file\")",
+        "detail": "Week 02:Python Project Week.Module 06: Streamlit and Gemini API.Sreamlit.video",
         "documentation": {}
     }
 ]

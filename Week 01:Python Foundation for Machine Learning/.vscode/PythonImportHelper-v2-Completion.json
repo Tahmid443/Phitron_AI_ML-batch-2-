@@ -1,0 +1,11 @@
+[
+    {
+        "label": "most_frequent_word",
+        "kind": 2,
+        "importPath": "Module 04: Asssignment-1.test",
+        "description": "Module 04: Asssignment-1.test",
+        "peekOfCode": "def most_frequent_word(filename):\n    file = open(filename, \"r\")\n    text = file.read()\n    text = text.lower()\n    freq = {}\n    word = \"\"\n    for ch in text:\n        if ch.isalnum(): \n            word += ch\n        else:",
+        "detail": "Module 04: Asssignment-1.test",
+        "documentation": {}
+    }
+]
